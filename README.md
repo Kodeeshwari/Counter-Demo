@@ -1,4 +1,4 @@
 # Counter-Demo
 Value increase or decrease on click.
-<h1>screen shot</h1>
+<a href="https://countervalue.netlify.com/"></a>
 <img src="ss/counter.PNG" alt="counter"/>
