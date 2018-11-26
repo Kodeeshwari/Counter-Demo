@@ -12,11 +12,9 @@ html {
     height: 100%;
     text-align: center;
     display: grid;
-    vertical-align: middle;
-    grid-template-rows: 20% 1fr;
+    
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "title title title" "minus result plus";
-    align-content: center;
+    grid-template-areas:"minus result plus";
 }
 
 h1 {
@@ -33,14 +31,15 @@ span {
 .minus {
     height: 200px;
     width: 200px;
+    display: table;
     background-color: #ed143d;
     border-radius: 50% 50%;
     grid-area: minus;
     box-sizing: border-box;
+    align-self: center;
+    justify-self: center;
     border: 1px solid #000;
-    margin-left: 100px;
-    margin-top: 100px;
-    font-size: 20pt;
+    font-size: 30pt;
     color: #fff;
 }
 
@@ -56,15 +55,18 @@ span {
 }
 
 .result {
+    display: table;
     height: 400px;
     width: 400px;
     background-color: coral;
-    border-radius: 50% 50%;
+    border-radius: 50%;
     grid-area: result;
     box-sizing: border-box;
     border: 2px solid #f00;
     color: #fff;
     font-size: 20pt;
+    align-self: center;
+    justify-self: center;
 }
 
 .result:hover {
@@ -85,11 +87,9 @@ span {
     background-color: #ed143d;
     border-radius: 50% 50%;
     grid-area: plus;
-    box-sizing: border-box;
-    border: 1px solid #000;
-    margin-left: 100px;
-    margin-top: 100px;
-    font-size: 20pt;
+    align-self: center;
+    justify-self: center;
+    font-size: 30pt;
     text-align: center;
     color: #fff;
 }
@@ -103,4 +103,11 @@ span {
     background-color: #ed143d;
     box-shadow: 0 5px #f5a5b5;
     transform: translateY(4px);
+}
+
+.txt-center {
+    height: 200px;
+    width: 200px;
+    display: table-cell;
+    vertical-align: middle;
 }
